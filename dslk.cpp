@@ -57,16 +57,23 @@ int tinhtrungbinh(TroNut First){
 }
 
 void TimKiem(TroNut First, int kiemtra){
-	
+	int danhsachlienket = 0;
+	if(danhsachlienket>0){
+		printf("%d",TimKiem);
+	}else{
+		printf("\nkhong ton tai");
+	}
 }
 
 int main(){
+	int kiemtra;
 	TroNut First = NULL;
 	NhapDanhSach(First);
 //	HienThi(First);
 //	printf("%c",&First);
 //	printf("%f",Tong(First));
-	printf("\n%d",tinhtrungbinh(First));
+//	printf("\n%d",tinhtrungbinh(First));
+	TimKiem(First, kiemtra);
 	return 0;
 }
 
