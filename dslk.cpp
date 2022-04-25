@@ -44,19 +44,22 @@ float Tong(TroNut First){
 }
 
 int tinhtrungbinh(TroNut First){
-	TroNut p = First;   
-    int tb=0;
-    while(p!=NULL){
-	tb+=p->x;   
-    p = p->next;
-    }
-    tb/=2;
-    return tb;
+	TroNut p = First;
+	int dem = 0;
+	float tb=0;
+	while(p!=NULL){
+	tb+=p->x;
+	p = p->next;
+	dem++;
+	}
+	tb/=dem;
+	return tb;
 }
 
 void TimKiem(TroNut First, int kiemtra){
 	
 }
+
 int main(){
 	TroNut First = NULL;
 	NhapDanhSach(First);
