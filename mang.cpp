@@ -59,3 +59,4 @@ int main()
     // cout<<"Tong cac phan tu trong mang: "<<sum(a);
     return 0;
 }
+//a
