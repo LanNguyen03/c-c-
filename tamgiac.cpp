@@ -1,12 +1,12 @@
 #include<stdio.h>
 int main(){
-	int a,b,c;
+	float a,b,c;
 	printf("Nhap vao canh a: ",&a);
-	scanf("%d",&a);
+	scanf("%f",&a);
 	printf("Nhap vao canh b: ",&b);
-	scanf("%d",&b);
+	scanf("%f",&b);
 	printf("Nhap vao canh c: ",&c);
-	scanf("%d",&c);
+	scanf("%f",&c);
 	if(a<b+c && b<a+c && c<a+b){
 	if(a==b && a==c && b==c){
 		printf("day la tam giac deu");
