@@ -7,6 +7,7 @@ int main(){
 	scanf("%d",&b);
 	printf("Nhap vao canh c: ",&c);
 	scanf("%d",&c);
+	if(a<b+c && b<a+c && c<a+b){
 	if(a==b && a==c && b==c){
 		printf("day la tam giac deu");
 	}
@@ -20,6 +21,10 @@ int main(){
     	printf("day la tam giac tu");
 	}else{
 		printf("day la tam giac nhon");
+	}
+	}
+	else{
+		printf("tam giac khong hop le");
 	}
 	return 0;
 }
