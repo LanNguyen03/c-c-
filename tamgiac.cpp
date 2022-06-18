@@ -10,8 +10,16 @@ int main(){
 	if(a==b && a==c && b==c){
 		printf("day la tam giac deu");
 	}
-	if(a*a==b*b+c*c || b*b==a*a+c*c || c*c== a*a+b*b){
+	else if(a*a==b*b+c*c || b*b==a*a+c*c || c*c== a*a+b*b){
 		printf("day la tam giac vuong");
+	}
+	else if(a==b || a==c || b==c){
+		printf("day la tam giac can");
+	}	
+    else if(a*a > b*b+c*c || b*b > a*a+c*c || c*c > a*a+b*b){
+    	printf("day la tam giac tu");
+	}else{
+		printf("day la tam giac nhon");
 	}
 	return 0;
 }
